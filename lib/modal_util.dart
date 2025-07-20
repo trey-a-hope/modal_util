@@ -21,8 +21,9 @@ class ModalUtil {
     ),
   );
 
-  static void showSuccess({required String title}) {
+  static void showSuccess(BuildContext context, {required String title}) {
     _showToast(
+      context,
       title: title,
       toastificationType: ToastificationType.success,
       icon: const Icon(Icons.check),
@@ -30,8 +31,9 @@ class ModalUtil {
     );
   }
 
-  static void showError({required String title}) {
+  static void showError(BuildContext context, {required String title}) {
     _showToast(
+      context,
       title: title,
       toastificationType: ToastificationType.error,
       icon: const Icon(Icons.error),
@@ -40,13 +42,15 @@ class ModalUtil {
   }
 
   /// Shows a brief, customizable toast.
-  static void _showToast({
+  static void _showToast(
+    BuildContext context, {
     required String title,
     required ToastificationType toastificationType,
     required Widget icon,
     required MaterialColor primaryColor,
   }) {
     toastification.show(
+      context: context,
       autoCloseDuration: const Duration(seconds: 3),
       title: Text(title),
       type: toastificationType,
