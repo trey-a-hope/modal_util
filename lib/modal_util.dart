@@ -10,16 +10,18 @@ part 'widgets/email_password_input.dart';
 
 class ModalUtil {
   static Future<(String, String)?> showEmailPasswordDialog(
-    BuildContext context, {
-    required Function(String, String) onSubmit,
-    required void Function() onCancel,
-  }) async => showDialog<(String, String)?>(
+    BuildContext context,
+  ) async => showDialog<(String, String)?>(
     context: context,
     useRootNavigator: false,
     barrierDismissible: false,
     builder: (BuildContext context) => Dialog(
       insetPadding: const EdgeInsets.symmetric(horizontal: 16),
-      child: EmailPasswordInputWidget(onSubmit: onSubmit, onCancel: onCancel),
+      child: EmailPasswordInputWidget(
+        onSubmit: (email, password) =>
+            Navigator.of(context).pop((email, password)),
+        onCancel: () => Navigator.of(context).pop(),
+      ),
     ),
   );
 
