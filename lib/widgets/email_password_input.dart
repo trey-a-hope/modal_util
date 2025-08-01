@@ -57,7 +57,6 @@ class _EmailPasswordInputWidgetState extends State<EmailPasswordInputWidget> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
@@ -71,7 +70,7 @@ class _EmailPasswordInputWidgetState extends State<EmailPasswordInputWidget> {
         key: _formKey,
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextFormField(
               controller: _emailController,

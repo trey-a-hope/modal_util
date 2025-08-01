@@ -16,7 +16,7 @@ class ModalUtil {
     useRootNavigator: false,
     barrierDismissible: false,
     builder: (BuildContext context) => Dialog(
-      insetPadding: const EdgeInsets.symmetric(horizontal: 16),
+      insetPadding: const EdgeInsets.symmetric(horizontal: 128),
       child: EmailPasswordInputWidget(
         onSubmit: (email, password) =>
             Navigator.of(context).pop((email, password)),
