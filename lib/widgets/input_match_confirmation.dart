@@ -40,8 +40,9 @@ class _InputMatchConfirmationWidget
   }
 
   @override
-  Widget build(BuildContext context) =>
-      Platform.isIOS ? _cupertinoAlertDialog() : _alertDialog();
+  Widget build(BuildContext context) => Platform.isIOS || Platform.isMacOS
+      ? _cupertinoAlertDialog()
+      : _alertDialog();
 
   CupertinoAlertDialog _cupertinoAlertDialog() => CupertinoAlertDialog(
     title: Text(widget.title),

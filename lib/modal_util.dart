@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:toastification/toastification.dart';
@@ -99,7 +98,7 @@ class ModalUtil {
     useRootNavigator: false,
     barrierDismissible: false,
     context: context,
-    builder: (BuildContext context) => kIsWeb || Platform.isIOS
+    builder: (BuildContext context) => Platform.isIOS || Platform.isMacOS
         ? CupertinoAlertDialog(
             title: Text(title),
             content: Text(message),
