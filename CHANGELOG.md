@@ -1,3 +1,10 @@
+## 0.0.5
+
+* Add showSnackbar method to ModalUtil for displaying snack bars
+
+- Introduced a new static method `showSnackbar` in ModalUtil to facilitate snack bar notifications.
+- This method utilizes ScaffoldMessenger to show a SnackBar with a given title, enhancing user feedback capabilities.
+
 ## 0.0.4
 
 * Refactor modal dialog handling to support macOS. Updated ModalUtil and InputMatchConfirmationWidget to include Platform.isMacOS checks for dialog rendering, enhancing compatibility across Apple devices.
