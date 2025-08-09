@@ -8,6 +8,11 @@ part 'widgets/input_match_confirmation.dart';
 part 'widgets/email_password_input.dart';
 
 class ModalUtil {
+  static void showSnackbar(BuildContext context, String title) =>
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(title)));
+
   static Future<(String, String)?> showEmailPasswordDialog(
     BuildContext context,
   ) async => showDialog<(String, String)?>(
