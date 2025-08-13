@@ -126,11 +126,11 @@ class ModalUtil {
             actions: <Widget>[
               TextButton(
                 onPressed: () => Navigator.of(context).pop(false),
-                child: const Text('NO', style: TextStyle(color: Colors.black)),
+                child: const Text('NO'),
               ),
               TextButton(
                 onPressed: () => Navigator.of(context).pop(true),
-                child: const Text('YES', style: TextStyle(color: Colors.black)),
+                child: const Text('YES'),
               ),
             ],
           ),

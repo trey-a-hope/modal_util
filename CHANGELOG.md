@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Refactor button text styles in ModalUtil to remove explicit color settings for improved consistency and adherence to default styling.
+
 ## 0.0.5
 
 * Add showSnackbar method to ModalUtil for displaying snack bars
