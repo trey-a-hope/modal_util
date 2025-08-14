@@ -1,3 +1,7 @@
+## 0.0.7
+
+* Add universal_platform dependency for improved platform detection in InputMatchConfirmationWidget.
+
 ## 0.0.6
 
 * Refactor button text styles in ModalUtil to remove explicit color settings for improved consistency and adherence to default styling.

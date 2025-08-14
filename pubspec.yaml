@@ -1,6 +1,6 @@
 name: modal_util
 description: "Common modal and toast utility to bootstrap quickly"
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/yourusername/bloc_error_handler
 
 environment:
@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   gap: ^3.0.1 
   toastification: ^3.0.3
+  universal_platform: ^1.1.0
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,8 @@
-import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:toastification/toastification.dart';
+import 'package:universal_platform/universal_platform.dart';
 
 part 'widgets/input_match_confirmation.dart';
 part 'widgets/email_password_input.dart';
@@ -103,7 +103,8 @@ class ModalUtil {
     useRootNavigator: false,
     barrierDismissible: false,
     context: context,
-    builder: (BuildContext context) => Platform.isIOS || Platform.isMacOS
+    builder: (BuildContext context) =>
+        UniversalPlatform.isIOS || UniversalPlatform.isMacOS
         ? CupertinoAlertDialog(
             title: Text(title),
             content: Text(message),
