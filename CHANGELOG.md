@@ -1,3 +1,7 @@
+## 0.0.8
+
+* Add showInfo and showWarning methods in ModalUtil for enhanced toast notifications.
+
 ## 0.0.7
 
 * Add universal_platform dependency for improved platform detection in InputMatchConfirmationWidget.

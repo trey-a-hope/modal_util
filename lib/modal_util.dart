@@ -49,6 +49,26 @@ class ModalUtil {
     );
   }
 
+  static void showInfo(BuildContext context, {required String title}) {
+    _showToast(
+      context,
+      title: title,
+      toastificationType: ToastificationType.info,
+      icon: const Icon(Icons.info),
+      primaryColor: Colors.blue,
+    );
+  }
+
+  static void showWarning(BuildContext context, {required String title}) {
+    _showToast(
+      context,
+      title: title,
+      toastificationType: ToastificationType.warning,
+      icon: const Icon(Icons.warning),
+      primaryColor: Colors.amber,
+    );
+  }
+
   /// Shows a brief, customizable toast.
   static void _showToast(
     BuildContext context, {
